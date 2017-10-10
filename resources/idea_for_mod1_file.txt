@@ -1,0 +1,26 @@
+check comments: a line with a # (ft_trim)
+
+coordinates will have to be separated with numbers
+
+one of the rows can't be over (20, or whatever the pdf says about 
+coordinates)
+one of the columns can't be over that too
+
+missing coordinates will be filled with zeros
+
+a coordinate value range from (0 to 9, or maybe up to F)
+
+skip whitespaces (tabs, spaces, etc...)
+
+any other character than xdigits and/or lines staring with a #, should
+return an error 
+
+values, such as name and other things (colors, terrain, etc...), should 
+be defines at the top of the file, starting with a $, and the name must 
+be in all caps. then it should be followed by a = sign, skip 
+whitespaces, and then whatever else is gonna be saved in an array of 
+strings, and compared to the real values of the game. If one is missing 
+or failed, set default values.
+
+cap the strings if one of the values is larger than what's required 
+(like a name with 100 characters) 
