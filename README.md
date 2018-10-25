@@ -6,7 +6,7 @@
 
 If you have brew installed, run the following command:
 
-```
+```sh
 brew install maven
 ```
 
@@ -14,13 +14,13 @@ Maven is also [downloadable as a zip file](http://maven.apache.org/download.cgi)
 
 To test the Maven installation, run `mvn` from the command-line:
 
-```
+```sh
 mvn -v
 ```
 
 If all goes well, you should be presented with some information about the Maven installation. It will look similar to (although perhaps slightly different from) the following:
 
-```
+```sh
   Maven home: /Volumes/Storage/goinfre/jaleman/brew/Cellar/maven/3.5.4/libexec
   Java version: 1.8.0_112, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre
   Default locale: en_US, platform encoding: UTF-8
@@ -28,6 +28,22 @@ If all goes well, you should be presented with some information about the Maven 
 ```
 
 Congratulations! You now have Maven installed.
+
+### Compile and Build Project
+
+To try out the build, issue the following at the command line:
+
+```sh
+mvn compile
+```
+
+This will run Maven, telling it to execute the compile goal. When it’s finished, you should find the compiled .class files in the target/classes directory.
+
+Then run the package goal to create the jar file:
+
+```sh
+mvn package
+```
 
 ## Sources
 
