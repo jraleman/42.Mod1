@@ -45,6 +45,14 @@ Then run the package goal to create the jar file:
 mvn package
 ```
 
+### Run
+
+Run the newly compiled and packaged JAR with the following command:
+
+```sh
+java -cp target/mod1-1.0-SNAPSHOT.jar mod1.App
+```
+
 ## Sources
 
 - [OpenGL Water Tutorials](https://www.youtube.com/playlist?list=PLRIWtICgwaX23jiqVByUs0bqhnalNTNZh)
