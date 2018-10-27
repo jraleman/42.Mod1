@@ -1,6 +1,6 @@
 # Making of: 42_Mod-1
 
-## Chapter 0 - What Language?
+## Chapter 0 - WhatLanguage?
 
 Because this is an academic project, I wanted to try out and at least get myself familiar with a "mainstream" language.
 
@@ -8,7 +8,7 @@ Because of this, I decided to go with Java, because when learning about React.js
 
 Some people hate OOP, and for some people it is a kind of a fetish...? Maybe, I don't know.
 
-## Chapter 1 - Good Practices
+## Chapter 1 - GoodPractices
 
 After getting fresh using Java with the command line interface or terminal, I did some researching to see what is the best way to structure a basic Java project by yourself.
 
@@ -24,17 +24,29 @@ On the good side, I learned how to use `maven` right away, because of debugging 
 
 Reading carefully the pdf, and trying to understand as much as I can (a skill that I am still lacking to this day, but trying to make as much progress as possible)... I divided the project into 3 main components:
 
-### Graphics
+### File Parsing
 
 ...
 
-### Parsing
+fillit
+
+xml
+
+### Mapping (API)
 
 ...
 
 ### Math Stuff
 
 ...
+
+special search engine for academic stuff
+
+### Render Graphics
+
+...
+
+engine
 
 #### Imagination
 
@@ -43,8 +55,22 @@ Reading carefully the pdf, and trying to understand as much as I can (a skill th
 Main idea of the project, if you could visualize it I guess?
 
 ```
-
-
-
+                ~
+             #~~
+             )#(  ← Render Graphics
+            ( # )  
+             ___
+            |   |
+            |   |
+  File      |   |
+   Parsing  |   |
+      ↘     |   | ← Math Stuff
+        ___ |   |
+        \  \|   |
+         \  |   |
+         /-------\   Mapping (an API?)
+        (_________) ↵
+         \_______/  
 
 ```
+Source: https://www.asciiart.eu/plants/marijuana
