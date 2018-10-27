@@ -20,9 +20,61 @@ After a quick guide, I managed to get a `Hello world!` app running... but it too
 
 On the good side, I learned how to use `maven` right away, because of debugging and stuff.
 
-## Chapter 2 - Design
+## Chapter 2 - RTFM
 
-Reading carefully the pdf, and trying to understand as much as I can (a skill that I am still lacking to this day, but trying to make as much progress as possible)... I divided the project into 3 main components:
+The most important step I guess?
+
+`DuckDuckGo` the title if you don't understand the reference ;)
+
+```
+This project is about creating a terrestrial
+simulation followed by a hydrodynamic one.
+
+At first, you will extrapolate from very restricted
+provided data a surface (more or less realistic)
+representing a scene. Once that scene is defined,
+it will be covered with water, in multiple shapes.
+
+Your program will get at least one external file
+(extensions .mod1) as parameter that contains the
+minimum information you have at your disposal.
+It is a series of coordinates in 3D.
+
+They define a few sparse points through which your
+scene will imperatively go across.
+It can be either 5, 10 or 20 points for example.
+A file containing more than 50 points is off topic.
+This is not about creating a fdf.
+```
+
+In summary:
+
+- Parsing
+  - One external file
+  - Extrapolate data of a surface
+  - Multiple shapes
+  - Extensions .mod1
+- Mapping
+  - Minimum information required
+  - Series of coordinates in 3D
+- Algorithms
+  - Terrestrial simulation
+  - Hydrodynamic simulation
+- Graphics
+  - Covered with water
+  - It can be either (points):
+    - 5
+    - 10
+    - 20
+
+```
+* Also, a file containing more than 50 points is off topic.
+* This is not about creating a fdf.
+```
+
+## Chapter 3 - Designing
+
+Reading carefully the pdf, and trying to understand as much as I can (a skill that I am still lacking to this day, but trying to make as much progress as possible)... I divided the project into 4 main components:
 
 ### File Parsing
 
@@ -50,13 +102,13 @@ Sweet, right? Also, the best part is that I don't have to worry about designing 
 
 ### Mapping (API)
 
-...
+While designing this system, I couldn't help but tried to made it as simple as I can, while making it very customizable. This means that pretty much any variable that I will use as a prop, can and will be modified, if there is no problem with the testing.
+
+You can find the complete list of props here. `<- add link!`
 
 ### Math Stuff
 
 ...
-
-special search engine for academic stuff
 
 ### Render Graphics
 
