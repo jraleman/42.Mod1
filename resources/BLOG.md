@@ -26,11 +26,27 @@ Reading carefully the pdf, and trying to understand as much as I can (a skill th
 
 ### File Parsing
 
-...
+At first, I made some kind of system similar to `fillit`. For those who don't know about that project, apply to 42 school silicon valley (it's free). The main idea was:
 
-fillit
+```
+  { propertyName } : [
+         ↑             { typeInt },
+    'waterColor'       { typeBool },
+                       { typeFloat },
+                       { typeString },
+                     ]      ↑
+                          'red' or #ff0000
+```
 
-xml
+And the file extension of the file, is `.mod1`
+
+But because I wanted to try something new, and I kept adding more and more functionalities, I opt to learn about `.xml` and stuff, so I named the new file extension of the mod1 file as `.modx`
+
+```
+  <WaterColor>Red</WaterColor>
+```
+
+Sweet, right? Also, the best part is that I don't have to worry about designing and creating the file parsing system from scratch.
 
 ### Mapping (API)
 
