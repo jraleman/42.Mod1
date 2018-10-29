@@ -169,7 +169,19 @@ File      |   |
 
 ## Chapter 4 - Building the Engine
 
-...
+Looking at different videos, my favorite choice was Unreal Engine 4. After
+having some issues installing it, I decided to try Unity. It worked! I installed
+it fine (after some tweaking during the installation process). Now, the thing is
+that I couldn't run any project, and trying to make this work was going to be
+a pain in the ass.
+
+At the end, I decided to try my obvious, yet interesting choice.
+
+Processing was my choice. I have used it before, back at college. I made a very
+simple, yet "interesting" project... an Arduino based turret, with a laser
+pointer, controllable via a computer interface.
+
+But that is another story...
 
 ```
                  _-====-__-======-__-========-_____-=========-__
@@ -187,7 +199,31 @@ File      |   |
 
 ```
 
-https://www.asciiart.eu/vehicles/trains
+Source: [AsciiArt](https://www.asciiart.eu/vehicles/trains)
+
+### Step 0 - Hello World!
+
+First, we need to install processing. I went to their website, and downloaded
+the latest version at the time `processing-3.4`. Then I wrote a program, to what
+some consider the best piece of code of the history of mankind.
+
+```
+println("Hello world!");
+```
+
+Easy peasy.
+
+Now you might be wondering, isn't Processing made to be used as an awesome tool
+to do crazy visual stuff? And the answer is yes, you are right. So, let's open
+a window and draw a line.
+
+```
+line(15, 25, 70, 90);
+```
+
+### Step 1 - Architecting
+
+...
 
 ## Chapter 5 - Building the Math
 
