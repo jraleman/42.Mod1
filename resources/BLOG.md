@@ -221,7 +221,73 @@ a window and draw a line.
 line(15, 25, 70, 90);
 ```
 
+But let's do something more funcitonal...
+
+```
+int windowWidth  = 1920;
+int windowHeight = 1080;
+
+public void settings() {
+  size(windowWidth, windowHeight, P3D);
+  return ;
+}
+
+public void setup() {
+  colorMode(HSB);
+  return ;
+}
+
+public void draw() {
+  background(0x222222);
+  return ;
+}
+```
+
 ### Step 1 - Architecting
+
+...
+
+#### XML
+
+...
+
+```
+XML xml;
+
+public void settings() {
+  xml = loadFileXML();
+  loadSettings(xml);
+  size(windowWidth, windowHeight, P3D);
+  return ;
+}
+
+private XML loadFileXML() {
+    return (loadXML(fileName));
+}
+
+public void loadSettings(XML xml) {
+  XML[] settings = xml.getChildren("window");
+  windowWidth = settings[0].getInt("width");
+  windowHeight = settings[0].getInt("height");
+  windowTitle = settings[0].getContent();
+
+  println("Title  : " + windowTitle);
+  println("Width  : " + windowWidth);
+  println("Height : " + windowHeight);
+}
+```
+
+```
+<settings>
+  <window width="1920" height="1080">mod1</window>
+</settings>
+```
+
+#### Visual
+
+...
+
+#### Collision
 
 ...
 
