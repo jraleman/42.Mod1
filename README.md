@@ -31,6 +31,10 @@ Congratulations! You now have Maven installed.
 
 ### Compile and Build Project
 
+```sh
+processing-java --sketch=`pwd`/src/pde/mode1 --ut=`pwd`/out --foce --run
+```
+
 To try out the build, issue the following at the command line:
 
 ```sh
